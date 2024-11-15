@@ -43,18 +43,18 @@
 }
 
 :root .footer {
-    background-color: #252323;
+    background-color: #5a97bb;
 }
 
 .lightcolors .footer {
-    background-color: #323232;
+    background-color:  #5a97bb;
 }
 
-:root .tomatologofooter {
+:root .capereadslogofooter {
     filter: var(--logos-filter); 
 }
 
-.lightcolors .tomatologofooter {
+.lightcolors .capereadslogofooter {
     filter: none; 
 }
 

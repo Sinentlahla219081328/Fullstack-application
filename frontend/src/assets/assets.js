@@ -84,37 +84,26 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Salad",
+        menu_name: "Novel",
         menu_image: menu_1
     },
     {
-        menu_name: "Rolls",
+        menu_name: "Drama",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Science",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Mathematics",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "Languages",
         menu_image: menu_5
     },
-    {
-        menu_name: "Pure Veg",
-        menu_image: menu_6
-    },
-    {
-        menu_name: "Pasta",
-        menu_image: menu_7
-    },
-    {
-        menu_name: "Noodles",
-        menu_image: menu_8
-    }]
+   ]
 
 export const food_list = [
     {

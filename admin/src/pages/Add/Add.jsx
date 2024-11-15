@@ -12,7 +12,7 @@ const Add = ({url}) => {
         name:"",
         description:"",
         price:"",
-        category:"Salad"
+        category:"Novel"
     })
 
     const onChangeHandler = (event) => {
@@ -29,13 +29,13 @@ const Add = ({url}) => {
         formData.append("price",Number(data.price))
         formData.append("category",data.category)
         formData.append("image",image)
-        const response = await axios.post(`${url}/api/food/add`,formData)
+        const response = await axios.post(`${url}/api/book/add`,formData)
         if (response.data.success) {
             setData({
                 name:"",
                 description:"",
                 price:"",
-                category:"Salad"
+                category:"Novel"
             })
             setImage(false)
             toast.success(response.data.message)
@@ -68,19 +68,17 @@ const Add = ({url}) => {
                 <div className="add-category flex-col">
                     <p>Product Category</p>
                     <select className='selectt' onChange={onChangeHandler} name="category">
-                        <option value="Salad">Salad</option>
-                        <option value="Rolls">Rolls</option>
-                        <option value="Deserts">Deserts</option>
-                        <option value="Sandwich">Sandwich</option>
-                        <option value="Cake">Cake</option>
-                        <option value="Pure Veg">Pure Veg</option>
-                        <option value="Pasta">Pasta</option>
-                        <option value="Noodles">Noodles</option>
+                        <option value="Novel">Novel</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Science">Science</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Languages">Languages</option>
+                        
                     </select>
                 </div>
                 <div className="add-price flex-col">
                     <p>Product Price</p>
-                    <input className='inputclasa' onChange={onChangeHandler} value={data.price} type="Number" name='price' placeholder='$20' />
+                    <input className='inputclasa' onChange={onChangeHandler} value={data.price} type="Number" name='price' placeholder='R20' />
                 </div>
             </div>
             <button type='submit' className='add-btn'>ADD</button>
