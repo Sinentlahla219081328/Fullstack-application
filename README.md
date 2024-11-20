@@ -57,20 +57,26 @@ Make sure you have the following installed:
     - **MongoDB**: Ensure MongoDB is installed and running. You may also need to set up a `config.js` file with your database URI.
     - **PostgreSQL**: If using PostgreSQL, create a database and update the `config.js` with the connection string.
 
-5. Start the back-end server:
-    ```bash
+5. Start the admin side:
+
     cd backend
-    npm start
-    ```
+    npm run dev
+
 
 6. Start the front-end application:
-    ```bash
+
     cd frontend
-    npm start
-    ```
+   npm run dev
 
-The website should now be running locally at [http://localhost:3000](http://localhost:3000).
 
+7.Start the server application:
+
+   cd backend
+   npm run server
+
+  
+
+The website should now be running locally at
 ## Features Walkthrough
 
 ### 1. **User Authentication**:
